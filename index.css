@@ -45,19 +45,29 @@
     background: none;
     border: none;
     padding: 0;
-    margin: 0;
     cursor: pointer;
   }
-
+  
   .image-button img {
     display: block;
   }
-
+  
   table {
     width: 100%;
     border-collapse: collapse;
   }
+  
+  .dropdown-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .show {
+    display: table-row;
+  }
 
-
+  .solid{
+    border-top: 3px solid #bbb;
+  }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
