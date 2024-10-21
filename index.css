@@ -32,14 +32,14 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: -150px auto 0; 
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative; 
   z-index: 1; 
-  padding: 20px; 
+  padding: 50px; 
   width: 90%; 
   height: auto; 
 }
@@ -47,7 +47,7 @@ body {
 .FAQs {
   display: flex;
   align-items: center; 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .icon-star {
@@ -105,8 +105,8 @@ table {
 }
 
 hr {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-top: 1px hsl(292, 16%, 49%);
 }
 
