@@ -10,6 +10,7 @@
   font-weight: 400, 600, 700; 
   font-style: normal;
 } 
+
 @font-face {
   font-family: 'VariableFont';
   src: url(assets/fonts/WorkSans-VariableFont_wght.ttf) format('truetype');
@@ -20,7 +21,9 @@
 body {
   background-color: hsl(275, 100%, 97%);
   position: relative; 
-  max-width: 1440px; /* Fixed typo here */
+  max-width: 100%; /* Make it fully responsive */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-size: 16px; /* Base font size */
 }
 
 .backgroundImg {
@@ -30,35 +33,42 @@ body {
 
 .container {
   max-width: 500px;
-  margin: -50px auto 0; 
+  margin: -150px auto 0; 
   background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative; 
   z-index: 1; 
   padding: 20px; 
+  width: 90%; 
+  height: auto; 
 }
 
 .FAQs {
   display: flex;
-  margin-left: 5%;
+  align-items: center; 
   margin-bottom: 20px;
 }
 
 .icon-star {
-  width: 5%;
+  width: 8%;
   height: auto; 
+  margin-right: 15px;
+  margin-left: 5px; 
 }
 
 h1 {
   color: hsl(292, 42%, 14%);
   font-family: 'VariableFont';
   font-weight: 700;
+  font-size: 3rem; 
 }
 
 .color {
   color: hsl(292, 42%, 14%);
   font-family: 'VariableFont';
+  font-size: 1rem; 
+  font-weight: 600;
 }
 
 .image-button {
@@ -70,6 +80,8 @@ h1 {
 
 .image-button img {
   display: block;
+  max-width: 100%; 
+  height: auto;
 }
 
 table {
@@ -79,17 +91,63 @@ table {
 
 .dropdown-content {
   display: none; 
-  padding: 10px;
   text-align: center;
   color: hsl(292, 16%, 49%);
-  font-size: 16px;
+  font-size: 1rem; 
   font-family: 'VariableFont';
   font-weight: 400;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.dropdown-content td {
+  padding-top: 10px; 
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px hsl(292, 16%, 49%);
 }
 
 .show {
   display: table-row; 
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution { 
+  font-size: 0.7rem; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 50%; 
+    margin: -70px auto 0; 
+  }
+
+  .icon-star {
+    width: 8%; 
+  }
+
+  h1 {
+    font-size: 2rem; 
+  }
+
+  .color {
+    font-size: 0.9rem; 
+  }
+
+  .dropdown-content{
+    font-size: 0.9rem;
+  }
+
+  .image-button img{
+    width: 40px;
+    height: auto;
+  }
+}
