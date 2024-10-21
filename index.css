@@ -21,9 +21,9 @@
 body {
   background-color: hsl(275, 100%, 97%);
   position: relative; 
-  max-width: 100%; /* Make it fully responsive */
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  font-size: 16px; /* Base font size */
+  max-width: 100%; 
+  overflow-x: hidden; 
+  font-size: 16px; 
 }
 
 .backgroundImg {
@@ -105,8 +105,8 @@ table {
 }
 
 hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border-top: 1px hsl(292, 16%, 49%);
 }
 
