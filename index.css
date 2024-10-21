@@ -1,73 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
 
-  body {
-    background-color: hsl(275, 100%, 97%);
-    position: relative; /* Positioning context for absolute children */
-    max-width: 144opx;
+@font-face {
+  font-family: 'Italic-VariableFont';
+  src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf) format('truetype');
+  font-weight: 400, 600, 700; 
+  font-style: normal;
+} 
+@font-face {
+  font-family: 'VariableFont';
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf) format('truetype');
+  font-weight: 400, 600, 700; 
+  font-style: normal;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  position: relative; 
+  max-width: 1440px; /* Fixed typo here */
 }
 
 .backgroundImg {
-    width: 100%; /* Ensure full width */
-    height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  height: auto; 
 }
 
 .container {
-    max-width: 500px;
-    margin: -50px auto 0; /* Pull the container up over the image */
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Ensure it sits above the background */
-    z-index: 1; /* Place above the background */
-    padding: 20px; /* Optional: add some padding for content */
+  max-width: 500px;
+  margin: -50px auto 0; 
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; 
+  z-index: 1; 
+  padding: 20px; 
 }
 
+.FAQs {
+  display: flex;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
 
-  .FAQs {
-    display: flex;
-    margin-left: 5%;
-  }
+.icon-star {
+  width: 5%;
+  height: auto; 
+}
 
-  .icon-star {
-    width: 5%;
-    height: auto; 
-  }
+h1 {
+  color: hsl(292, 42%, 14%);
+  font-family: 'VariableFont';
+  font-weight: 700;
+}
 
-  h1 {
-    color: hsl(292, 42%, 14%);
-  }
+.color {
+  color: hsl(292, 42%, 14%);
+  font-family: 'VariableFont';
+}
 
-  .image-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
-  
-  .image-button img {
-    display: block;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .dropdown-content {
-    display: none;
-    padding: 10px;
-  }
-  
-  .show {
-    display: table-row;
-  }
+.image-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
-  .solid{
-    border-top: 3px solid #bbb;
-  }
+.image-button img {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dropdown-content {
+  display: none; 
+  padding: 10px;
+  text-align: center;
+  color: hsl(292, 16%, 49%);
+  font-size: 16px;
+  font-family: 'VariableFont';
+  font-weight: 400;
+}
+
+.show {
+  display: table-row; 
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
